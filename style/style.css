@@ -12,9 +12,8 @@
 
 body {
     font-family: 'Quicksand', sans-serif;
-    background: #232526;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #BD0000;  /* fallback for old browsers */
+
 background-repeat: no-repeat;
 background-attachment: fixed;
 
@@ -45,9 +44,12 @@ background-attachment: fixed;
 .cronometro{
     text-align: center;
     justify-content: center;
-    color: var(--black);
+    color: var(--white);
    
-    background-color: rgba(228, 228, 228, 0.9);
+    border-radius: 50px;
+    background: linear-gradient(145deg, #ca0000, #aa0000);
+    box-shadow:  20px 20px 60px #880000,
+                 -20px -20px 60px #f20000;
     border-radius: 10px;
 
 }
@@ -76,9 +78,11 @@ background-attachment: fixed;
     font-size: 20px;
     text-align: center;
     justify-content: center;
-    color: var(--black);
+    color: var(--white);
    
-    background-color: rgba(228, 228, 228, 0.9);
+    background: linear-gradient(145deg, #ca0000, #aa0000);
+    box-shadow:  20px 20px 60px #880000,
+                 -20px -20px 60px #f20000;
     border-radius: 10px;
 }
 .generadortxt form{
@@ -145,7 +149,7 @@ background-attachment: fixed;
    }
 .card-txt{
     height: 500px;
-    display: flex;
+   
     font-size: 20px;
     text-align: center;
     justify-content: center;
@@ -156,13 +160,18 @@ background-attachment: fixed;
     border-radius: 10px;
 }
    .card-txt p{
+       
        padding-top: 20px;
-       text-align: center;
+       padding-left: 26px;
+       text-align: left;
        color: var(--black);
        font-size: var(--lg);
        font-weight: bold;
    }
 
+   .texto-generado{
+       text-align: left;
+   }
  @media (max-width: 640px) {
     .conteiner div {
         width: 100%;

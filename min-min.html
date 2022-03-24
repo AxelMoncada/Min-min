@@ -18,8 +18,10 @@
         <h1>Cronometro</h1>
         <div class="ptiempo">
             <h2>Primer Tiempo</h2>
-            <p> 09:45</p>
-            <button class="btn"> Comenzar </button>
+            <p id="contador1tiempo">00:00:00 </p>
+            <button class="btn" onclick="init()" id="btnIniciar1"> Comenzar </button>
+            <button class="btn" id="btnPausar1"> Pausar </button>
+            <button class="btn" id="btnReiniciar1"> Reiniciar </button>
         </div>
         <div class="stiempo">
             <h2>Segundo Tiempo</h2>
@@ -28,37 +30,42 @@
             <button class="btn"> Comenzar </button>
         </div>
     </div>
-    <div class="generadortxt">
-        <form class="conteiner-txt">
+    <div class="generadortxt conteiner-txt">
+        <section class="kk">
             <h2>Generador de textos</h2>
             <div class="txt-rivales">
                  <label> Ingresar rivales y marcador</label>
                  <br>
-                 <input type="text" placeholder="AMÉ 🆚 DIM [1-3] ">
+                 <input type="text" placeholder="AMÉ 🆚 DIM [1-3] " id="rivalestxt"> 
             </div>
 
             <div class="txt-jugada">
                 <label> Texto Jugada</label>
                 <br>
-               <textarea cols="30" rows="4" placeholder="Se detiene el compromiso. Atienden al guardameta del equipo rival. "></textarea>
+               <textarea cols="30" rows="4" placeholder="Se detiene el compromiso. Atienden al guardameta del equipo rival. " id="jugadatxt"></textarea>
              </div>
 
              <div class="txt-hastags">
                  <label> Hashtags</label>
                  <br>
-                 <input type="text" placeholder="#AMÉxDIM ">
-                 <button class="btn"> Generar </button>
+                 <input type="text" placeholder="#AMÉxDIM " id="hastagstxt">
+                 
             </div>
-            
-            
-        </form>
+                      
+            <button class="btn" id="generartxt"  "  > Generar </button>
+
+        </section >
     
 
     </div>
-    <div class="card-txt">
-        <p class="txt-generado"> Texto generado</p>
+    <div class="card-txt container" >
+        <h2 class="txt-generado"> Texto generado</h2>
+    
+        <p class="texto-generado" id="textogenerado"></p>     
     </div>
     
 </div>
+<script src="./cronometro11111.js"></script>
+<script src="./assents.js"></script>
 </body>
 </html>
