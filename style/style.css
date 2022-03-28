@@ -172,6 +172,15 @@ background-attachment: fixed;
    .texto-generado{
        text-align: left;
    }
+
+   .partido{
+       display: inline;
+   }
+
+   .partido iframe{
+       width: 500px;
+       height: 500px;
+   }
  @media (max-width: 640px) {
     .conteiner div {
         width: 100%;
