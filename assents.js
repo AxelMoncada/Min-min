@@ -62,22 +62,46 @@ generarmin.addEventListener('click', imprimirmin);
     function imprimirmin() {
 
         var rivales =document.getElementById("rivalestxt").value;
-         var jugada = document.getElementById("jugadatxt").value;
-         console.log( jugada)
+         var jugadatxt = document.getElementById("jugadatxt").value;
+       var  jugada= jugadatxt.replaceAll("\n", "<br>");
+       
           var hastags = document.getElementById("hastagstxt").value;
 
            var textogenerado = document.getElementById("textogenerado");
 
+           var  minutos1 = min1 ; 
 
-
-
-              var  minutos1 = min1 ; 
-              const txtgeneradomin = rivales + "<br>"+ "|" + minutos1 +"'"+ " ⏱|" + jugada + "<br>" + hastags ;
+           if ( sec1 >= 30){
+            var minutosfinal = minutos1 + 1;
+          
+        }else{
+            var minutosfinal = minutos1;
+            
+        }
+        console.log(minutosfinal)
+              
+              var txtgeneradomin = rivales + "<br>"+"<br>"+ "|" + minutosfinal +"'"+ " ⏱|" + jugada + "<br>" +"<br>" +  hastags ;
               document.getElementById("textogenerado").innerHTML= txtgeneradomin ;
                
     
     }
+
+    
 } 
+function copyText() {
+    /* Get the text field */
+    var copyText = document.getElementById("textogenerado");
+  
+   
+    /* Select the text field */
+    
+    /* Copy the text inside the text field */
+  navigator.clipboard.writeText(copyText.innerText);
+
+  /* Alert the copied text */
+  alert("Texto copiado: "
+   + copyText.innerText );
+}
     // Funcionalidad generar todo el texto 
 
   
