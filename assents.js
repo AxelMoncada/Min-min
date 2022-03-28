@@ -99,8 +99,7 @@ function copyText() {
   navigator.clipboard.writeText(copyText.innerText);
 
   /* Alert the copied text */
-  alert("Texto copiado: "
-   + copyText.innerText );
+document.getElementById("respuestatxt").innerText ="Texto copiado"
 }
     // Funcionalidad generar todo el texto 
 
