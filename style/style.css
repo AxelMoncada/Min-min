@@ -174,12 +174,21 @@ background-attachment: fixed;
    }
 
    .partido{
-       display: inline;
+       display: flex;
+       justify-content: center;
+       align-content: flex-start;
    }
 
+
    .partido iframe{
-       width: 500px;
-       height: 500px;
+       width: 1000px;
+       height: 600px;
+      border: none;
+      border-radius: 8px;
+   }
+
+   .partido button{
+       font-size: 35px;
    }
  @media (max-width: 640px) {
     .conteiner div {

@@ -25,9 +25,11 @@
         </div>
         <div class="stiempo">
             <h2>Segundo Tiempo</h2>
-            <p> 45:00</p>
-            <p> 55:00</p>
-            <button class="btn"> Comenzar </button>
+            <p id="contador2tiempo">00:45:00 </p>
+            <button class="btn" onclick="init2()" id="btnIniciar2"> Comenzar </button>
+            <button class="btn" id="btnPausar2"> Pausar </button>
+            <button class="btn" id="btnReiniciar2"> Reiniciar </button>
+            
         </div>
     </div>
     <div class="generadortxt conteiner-txt">
@@ -69,8 +71,18 @@
     
 </div>
 <div class="partido">
-    <iframe src="https://www.capodeportes.ru/play/winsports.php"></iframe>
+    <div>
+        
+    </div>
+
+    <button class="btn"name="sandbox" >Bloquear  <br>publicidad</button>
+<iframe scrolling="no" name="framez" id="framez" src="https://casadelfutbol.net/player/1/120" allowfullscreen="true"> </iframe>
+    
+
+
 </div>
+
+
 
 <script src="./cronometro11111.js"></script>
 <script src="./assents.js"></script>
