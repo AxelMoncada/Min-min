@@ -175,6 +175,7 @@ background-attachment: fixed;
 
    .partido{
        display: flex;
+    
        justify-content: center;
        align-content: flex-start;
    }
@@ -194,5 +195,20 @@ background-attachment: fixed;
     .conteiner div {
         width: 100%;
         
+    }
+    .partido{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: flex-start;
+    }
+    .partido button{
+        font-size: 15px;
+    }
+    .partido iframe{
+        width: 400px;
+        height: auto;
+       border: none;
+       border-radius: 8px;
     }
  }
