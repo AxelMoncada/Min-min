@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body >
     <h1 class="title">Automatizador de min a min</h1>
      <div class="conteiner">
       
@@ -18,10 +18,13 @@
         <h1>Cronometro</h1>
         <div class="ptiempo">
             <h2>Primer Tiempo</h2>
-            <p id="contador1tiempo">00:00:00 </p>
-            <button class="btn" onclick="init()" id="btnIniciar1"> Comenzar </button>
-            <button class="btn" id="btnPausar1"> Pausar </button>
-            <button class="btn" id="btnReiniciar1"> Reiniciar </button>
+            <div class="cronometro1tiempo">
+            
+            <P id="contador1segundos">00</p>
+             </div>
+            <button class="btn"  id="btnIniciar1" onclick="carga1()"> Comenzar </button>
+            <button class="btn" id="btnPausar1" onclick="detenerse1()" > Pausar </button>
+            <button class="btn" id="btnReiniciar1" onclick="reiniciar1()"> Reiniciar </button>
         </div>
         <div class="stiempo">
             <h2>Segundo Tiempo</h2>
@@ -76,15 +79,16 @@
     </div>
 
     <button class="btn"name="sandbox" >Bloquear  <br>publicidad</button>
-<iframe scrolling="no" name="framez" id="framez" src="https://casadelfutbol.net/player/1/120" allowfullscreen="true"> </iframe>
+ <!-- <iframe scrolling="no" name="framez" id="framez" src="https://casadelfutbol.net/player/1/120asd" allowfullscreen="true"> </iframe>
     
-
+ -->
 
 </div>
 
 
 
-<script src="./cronometro11111.js"></script>
-<script src="./assents.js"></script>
+
+<script src="./assentsqwe.js"></script>
+<script src="./cronometro.js"></script>
 </body>
 </html>

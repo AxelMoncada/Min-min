@@ -1,35 +1,55 @@
-let tiempo1 = document.getElementById("contador1tiempo")
-let incio1 = document.getElementById("btnIniciar1")
-let parar1 = document.getElementById("btnPausar1")
-let reiniciar1 = document.getElementById("btnReiniciar1")
 
+var cronometro;
+var tiemposec1 =document.getElementById('contador1segundos');
+var tiempomin1 =document.getElementById('contador1minutos');
+    var star1tiempo= document.getElementById('btnIniciar1');
+    var stop1tiempo= document.getElementById('btnPausar1');
+    var reiniciar1tiempo= document.getElementById('btnReiniciar1');
 
-let tiempo = 0, intervalo = 0;
-let verificador = false;
+    var sec1 ;
+    var min1 ;
+    var hora1 ;
+    var t;
 
-init();
-
-function init(){
-    incio1.addEventListener('click', iniciarcontador);
-    reiniciar1.addEventListener('click',resetearcontador);
+function reiniciar1(){
+    clearInterval(cronometro)
+    sec1=0;
+    tiemposec1.innerHTML = 0;
+    tiempomin1.innerHTML = 0;
 }
 
-function iniciarcontador () {
-    if (verificador == false){
-        intervalo= setInterval(function() {
-            tiempo +=0.01;
-            tiempo1.innerHTML = tiempo.toFixed(1);
-        }, 10);
-        verificador = true;
-    } else {
-        verificador = false;
-        clearInterval(intervalo);
-    }
+function detenerse1 (){
+    clearInterval(cronometro);
 }
+function carga1() { 
+   
+        
+        var sec1 =0;
+        var min1 =0;
+        var hora1 =0;
+      
 
-function resetearcontador () {
-    verificador = false;
-    tiempo = 0 ;
-    tiempo1.innerHTML = tiempo ;
-    clearInterval(intervalo);
+cronometro = setInterval(
+    function segundosfinales1(){
+        if (sec1 == 60)
+        {
+            sec1 = 0;
+            min1 ++;
+            
+            if (min1 == 0)
+            {
+                min1= 0;
+             }
+        }    
+
+            sec1++
+            return sec1
+       
+
+},1000)
+if(sec1<10){sec1= "0"+sec1;}
+if(min1<10){min1= "0"+min1;}
+
+
+ tiemposec1.innerHTML = hora1 + ":" + min1 + ":" + sec1;
 }

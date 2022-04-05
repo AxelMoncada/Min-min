@@ -1,45 +1,12 @@
 
 // Funcion cronometro primer tiempo
 function init () { 
- var tiempo1 =document.getElementById('contador1tiempo');
-var star1tiempo= document.getElementById('btnIniciar1');
-var stop1tiempo= document.getElementById('btnPausar1');
-var reiniciar1tiempo= document.getElementById('btnReiniciar1');
 
-var sec1 =0;
-var min1 =0;
-var hrs1 = 0;
-var t;
-function reloj () {
-    sec1 ++;
-    if (sec1 >= 60){
-        sec1 = 0;
-        min1 ++;
-        if(min1 >= 60){
-            min1=0;
-            hrs1 ++; 
-        }
-    }
-}
-function add() {
-    reloj();
-    tiempo1.textContent = (hrs1 > 9 ?  hrs1  : "0" + hrs1)
-                                + ":" + (min1 > 9 ? min1 : "0" + min1)
-                                + ":" + (sec1 > 9 ? sec1 : "0"+ sec1);
-                                timer();
-}
-function timer ( ) {
-    t =setTimeout (add, 1000);
-}
-timer();
-star1tiempo.onclick = timer ;
-stop1tiempo.onclick = function(){
-    clearTimeout(t);
-}
-reiniciar1tiempo.onclick = function () {
-    tiempo1.textContent = "00:00:00";
-    sec1 = 0 ; min1 = 0 ; hrs1 = 0;
-}
+
+
+
+
+
 
         
   // Funcionalidad generar todo el texto 

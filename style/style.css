@@ -191,6 +191,10 @@ background-attachment: fixed;
    .partido button{
        font-size: 35px;
    }
+   .cronometro1tiempo{
+       display: flex;
+       justify-content: center;
+   }
  @media (max-width: 640px) {
     .conteiner div {
         width: 100%;
