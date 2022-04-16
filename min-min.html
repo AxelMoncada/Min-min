@@ -20,18 +20,18 @@
             <h2>Primer Tiempo</h2>
             <div class="cronometro1tiempo">
             
-            <P id="contador1segundos">00</p>
+            <P id="contador1">00 : 00 : 00</p>
              </div>
-            <button class="btn"  id="btnIniciar1" onclick="carga1()"> Comenzar </button>
-            <button class="btn" id="btnPausar1" onclick="detenerse1()" > Pausar </button>
-            <button class="btn" id="btnReiniciar1" onclick="reiniciar1()"> Reiniciar </button>
+            <button class="btn"  id="btnIniciar1" onclick="start1()"> Comenzar </button>
+            <button class="btn" id="btnPausar1" onclick="stop()" > Pausar </button>
+            <button class="btn" id="btnReiniciar1" onclick="resume()"> Continuar </button>
         </div>
         <div class="stiempo">
             <h2>Segundo Tiempo</h2>
-            <p id="contador2tiempo">00:45:00 </p>
-            <button class="btn" onclick="init2()" id="btnIniciar2"> Comenzar </button>
-            <button class="btn" id="btnPausar2"> Pausar </button>
-            <button class="btn" id="btnReiniciar2"> Reiniciar </button>
+            <p id="contador2">00 : 45 : 00 </p>
+            <button class="btn" id="btnIniciar2" onclick="start2()"> Comenzar </button>
+            <button class="btn" id="btnPausar2" onclick="stop2()" > Pausar </button>
+            <button class="btn" id="btnReiniciar2" onclick="resume2()"> Continuar </button>
             
         </div>
     </div>
@@ -41,23 +41,30 @@
             <div class="txt-rivales">
                  <label> Ingresar rivales y marcador</label>
                  <br>
-                 <input type="text" placeholder="AMÉ 🆚 DIM [1-3] " id="rivalestxt"> 
+                 <input  class="input" type="text" placeholder="AMÉ 🆚 DIM [1-3] " id="rivalestxt"> 
             </div>
 
             <div class="txt-jugada">
                 <label> Texto Jugada</label>
                 <br>
-               <textarea cols="30" rows="4" placeholder="Se detiene el compromiso. Atienden al guardameta del equipo rival. " id="jugadatxt"></textarea>
+               <textarea  class="input" cols="30" rows="4" placeholder="Se detiene el compromiso. Atienden al guardameta del equipo rival. " id="jugadatxt"></textarea>
+               <br>
+               <button class="cta" id="emoji-button"><span> Emojis</span> 
+                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                <path d="M1,5 L11,5"></path>
+                <polyline points="8 1 12 5 8 9"></polyline>
+              </svg>
+            </button>
              </div>
 
              <div class="txt-hastags">
                  <label> Hashtags</label>
                  <br>
-                 <input type="text" placeholder="#AMÉxDIM " id="hastagstxt">
+                 <input class="input" type="text" placeholder="#AMÉxDIM " id="hastagstxt">
                  
             </div>
                       
-            <button class="btn" id="generartxt"  > Generar </button>
+            <button class="btn" id="generartxt" > Generar </button>
 
         </section >
     
@@ -79,16 +86,21 @@
     </div>
 
     <button class="btn"name="sandbox" >Bloquear  <br>publicidad</button>
- <iframe scrolling="no" name="framez" id="framez" src="https://casadelfutbol.net/player/1/120" allowfullscreen="true"> </iframe>
-    
+  <iframe scrolling="no" name="framez" id="framez" src="https://casadelfutbol.net/player/1/120" allowfullscreen="true"> </iframe>
+
 
 
 </div>
 
 
 
+<script language="javascript">
+    window.open = function blockPopup(){};
+    function pop(){window.open("","BLANK");}
+    window.onload = pop;
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.0.3/dist/index.min.js"></script>
+<script src="./assents.js"></script>
 
-<script src="./assentsqwe.js"></script>
-<script src="./cronometro.js"></script>
 </body>
 </html>
