@@ -5,21 +5,22 @@ Proyecto para el América de cali ayudar el trabajo de los Comunity Managers del
 
 ## Comenzando 🚀
 
-Funcionalidades:
-    1.Cronometro Primer tiempo comienza desde 0
-    2.Cronometro Segundo timepo comienza desde Minuto 45
-    3.Creacion y unificacion de textos
+### Funcionalidades:
+    ```
+    1. Cronometro Primer tiempo comienza desde 0
+    2. Cronometro Segundo timepo comienza desde Minuto 45
+    3. Creacion y unificacion de textos
         
-        *Ingresar el rival y marcador como se ingresa en los tweets de América de cali 
+       * Ingresar el rival y marcador como se ingresa en los tweets de América de cali 
             (AMÈ 🆚 CAL [3-0]) "Se modifica solo cuando se marca un gol".
 
-        *Ingresar jugada que ocurre que quieras twittear.
+       * Ingresar jugada que ocurre que quieras twittear.
             ( Falta peligrosísima a favor de América de Cali. ).
 
-        *Ingresar el Hastag que se utilice para el partido.
+       * Ingresar el Hastag que se utilice para el partido.
             (#AMÉxCAL #LosEscarlatas) "No se cambia en ningun momento del partido".
     
-     4.Al undir "generar" imprime el minuto en el que esta y construye el texto o el tweet para que solo sea copiar y pegar en twitter.
+     4. Al undir "generar" imprime el minuto en el que esta y construye el texto o el tweet para que solo sea copiar y pegar en twitter.
      
         (
             AMÉ 🆚 CAL [3-0] 
@@ -30,12 +31,12 @@ Funcionalidades:
             #LosEscarlatas
         )
 
-    5.Iframe para divisar el partido en un servidor para estar pendiente de todas las jugadas
+    5. Iframe para divisar el partido en un servidor para estar pendiente de todas las jugadas
 
 
-
-## Funciones extra⚙️
-
+    ```
+### Funciones extra⚙️
+       ```
 Bonus:
      *Aproximidad de minutos:
         Al estar en el segundo de 1-29 va a imprimir el minuto actual
@@ -48,7 +49,7 @@ Bonus:
         Se incluyo un boton para el bloqueo de publicidad del primer filtro del iframe 
 
 
-
+       ```
 ## Construido con 🛠️
 
 _Menciona las herramientas que utilizaste para crear tu proyecto_
